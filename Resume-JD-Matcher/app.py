@@ -49,12 +49,14 @@ class JobD(BaseModel):
     education_requirements: list[str] = []
     responsibilities: list[str] = []
 
+
 class Experience(BaseModel):
     company: str | None = None 
     role: str | None = None 
     duration: str | None = None 
     description: str | None = None 
     skills_used: list[str] = []
+
 
 class Resume(BaseModel):
     name: str | None = None 
@@ -67,12 +69,14 @@ class Resume(BaseModel):
     projects: list[str] = []
     certifications: list[str] = []
 
+
 class MatchResult(BaseModel):
     matching_skills: list[str] = []
     missing_skills: list[str] = []
     experience_met: bool | None = None 
     score: float = 0.0
     verdict: str = "" 
+
 
 jobd_schema = JobD.model_json_schema()
 resume_schema = Resume.model_json_schema()
