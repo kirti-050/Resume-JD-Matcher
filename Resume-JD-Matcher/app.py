@@ -30,13 +30,6 @@ if not api_key:
     st.error("Groq API Key not found. Add it to streamlit secrets or a local .env file.")
     st.stop()
 
-import requests
-
-try:
-    r = requests.get("https://api.groq.com")
-    st.write("Groq network test:", r.status_code, r.text[:300])
-except Exception as e:
-    st.write("Groq network test failed:", e)
 
 client = Groq(api_key = api_key)
 model = "openai/gpt-oss-120b"
