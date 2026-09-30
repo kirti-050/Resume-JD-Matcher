@@ -5,7 +5,7 @@ overall match score, matching skills, missing skills, and whether the
 experience requirement is met — for both candidates checking their fit and
 recruiters screening applicants.
 
-**Live app:** https://resume-job-matcher-llm.streamlit.app/
+**Live app:** [Resume JD Matcher](https://resume-job-matcher-llm.streamlit.app/)
 
 ## What it does
 
